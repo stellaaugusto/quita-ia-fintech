@@ -1,0 +1,43 @@
+/* Padrões Visuais e Identidade Única da Fintech Quita.IA */
+
+/* Customização Global de Tipografia e Suavização de Renderização */
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Customização da Barra de Rolagem (Scrollbar) para integrar ao Dark Theme */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #060d1a; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0f2443; 
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d4af37; 
+}
+
+/* Efeito de Elevação Suave nos Cards Principais */
+.custom-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.custom-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 20px -10px rgba(212, 175, 55, 0.15);
+}
+
+/* Garantia de Layout Fluido para as Tabelas */
+table {
+    width: 100%;
+    white-space: nowrap;
+}

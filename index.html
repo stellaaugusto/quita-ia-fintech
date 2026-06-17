@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quita.IA - Painel Principal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#0a192f',
+                            sidebar: '#060d1a',
+                            card: '#0f2443',
+                            gold: '#d4af37',
+                            goldHover: '#aa8c2c'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-bg text-slate-200 min-h-screen font-['Inter'] flex flex-col">
+
+    <div class="bg-brand-gold text-slate-950 text-center py-1 text-xs font-bold tracking-widest uppercase">
+        Quite mais rápido. Viva mais leve.
+    </div>
+
+    <div class="flex flex-1 flex-col md:flex-row">
+        <aside class="w-full md:w-64 bg-brand-sidebar p-6 flex flex-col justify-between border-b md:border-b-0 md:border-r border-slate-800/50">
+            <div>
+                <div class="flex items-center gap-3 mb-10">
+                    <div class="bg-brand-gold text-brand-sidebar w-9 h-9 rounded-lg flex items-center justify-center font-serif text-xl font-extrabold shadow-md">
+                        Q
+                    </div>
+                    <span class="text-xl font-bold tracking-tight text-white font-serif">Quita.IA</span>
+                </div>
+
+                <nav class="space-y-1.5" id="sidebar-nav">
+                    <a href="#" class="flex items-center gap-3 bg-slate-800/50 text-brand-gold px-4 py-3 rounded-xl font-medium text-sm transition-all border-l-4 border-brand-gold">
+                        <i class="fa-solid fa-circle text-[8px] mr-1"></i> Painel
+                    </a>
+                    <a href="#" class="flex items-center gap-3 text-slate-400 hover:text-white hover:bg-slate-900/50 px-4 py-3 rounded-xl font-medium text-sm transition-all">
+                        <i class="fa-solid fa-circle text-[8px] mr-1 opacity-40"></i> Minhas Dívidas
+                    </a>
+                    <a href="#" class="flex items-center gap-3 text-slate-400 hover:text-white hover:bg-slate-900/50 px-4 py-3 rounded-xl font-medium text-sm transition-all">
+                        <i class="fa-solid fa-circle text-[8px] mr-1 opacity-40"></i> Cadastrar
+                    </a>
+                    <a href="#" class="flex items-center gap-3 text-slate-400 hover:text-white hover:bg-slate-900/50 px-4 py-3 rounded-xl font-medium text-sm transition-all">
+                        <i class="fa-solid fa-circle text-[8px] mr-1 opacity-40"></i> Simulação
+                    </a>
+                    <hr class="border-slate-800 my-4" />
+                    <a href="#" class="flex items-center gap-3 text-slate-400 hover:text-white hover:bg-slate-900/50 px-4 py-3 rounded-xl font-medium text-sm transition-all">
+                        <i class="fa-solid fa-circle text-[8px] mr-1 opacity-40"></i> Índice ISF
+                    </a>
+                    <a href="#" class="flex items-center gap-3 text-slate-400 hover:text-white hover:bg-slate-900/50 px-4 py-3 rounded-xl font-medium text-sm transition-all">
+                        <i class="fa-solid fa-circle text-[8px] mr-1 opacity-40"></i> IA Consultora
+                    </a>
+                </nav>
+            </div>
+
+            <div class="mt-8 pt-4 border-t border-slate-800/60 flex items-center gap-3 bg-slate-900/30 p-3 rounded-xl">
+                <div class="w-9 h-9 rounded-lg bg-brand-gold/10 border border-brand-gold/30 flex items-center justify-center text-brand-gold font-bold text-xs">
+                    SA
+                </div>
+                <div>
+                    <p class="text-xs font-bold text-slate-200">Stella A.</p>
+                    <p class="text-[10px] text-slate-500 font-medium">Plano Inteligente</p>
+                </div>
+            </div>
+        </aside>
+
+        <main class="flex-1 p-4 md:p-8 space-y-6 overflow-y-auto">
+            
+            <header class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <div>
+                    <h2 class="text-2xl font-bold text-white font-serif">Bom dia, Stella! </h2>
+                    <p class="text-xs text-slate-400">Aqui está um resumo da sua situação financeira hoje</p>
+                </div>
+                <div class="flex gap-3">
+                    <button class="bg-brand-gold hover:bg-brand-goldHover text-brand-sidebar px-4 py-2 rounded-xl text-xs font-bold transition-all shadow-md">
+                        + Cadastrar Dívida
+                    </button>
+                </div>
+            </header>
+
+            <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                
+                <div class="bg-brand-card/50 border border-slate-800 p-5 rounded-2xl custom-card shadow-xl">
+                    <div class="flex justify-between items-start mb-3">
+                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Total de Dívidas</p>
+                        <span class="text-brand-gold text-xs"><i class="fa-solid fa-money-bill-wave"></i></span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white">R$ 34.820</h3>
+                    <p class="text-[11px] text-slate-500 mt-1">5 dívidas ativas</p>
+                </div>
+
+                <div class="bg-brand-card/50 border border-slate-800 p-5 rounded-2xl custom-card shadow-xl">
+                    <div class="flex justify-between items-start mb-3">
+                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Parcelas este mês</p>
+                        <span class="text-brand-gold text-xs"><i class="fa-solid fa-calendar-day"></i></span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brand-gold">R$ 2.140</h3>
+                    <p class="text-[11px] text-slate-400 mt-1">vence em 12 dias</p>
+                </div>
+
+                <div class="bg-brand-card/50 border border-slate-800 p-5 rounded-2xl custom-card shadow-xl">
+                    <div class="flex justify-between items-start mb-3">
+                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Índice ISF</p>
+                        <span class="px-1.5 py-0.5 bg-amber-500/10 text-amber-500 font-bold rounded text-[9px] tracking-wider uppercase">Médio</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-amber-500">67%</h3>
+                    <div class="w-full bg-slate-900 h-1.5 rounded-full mt-2 overflow-hidden">
+                        <div class="bg-amber-500 h-full rounded-full" style="width: 67%"></div>
+                    </div>
+                </div>
+
+                <div class="bg-brand-card/50 border border-slate-800 p-5 rounded-2xl custom-card shadow-xl">
+                    <div class="flex justify-between items-start mb-3">
+                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Maior Juros</p>
+                        <span class="text-rose-400 text-xs"><i class="fa-solid fa-percent"></i></span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-rose-400">8,4% a.m.</h3>
+                    <p class="text-[11px] text-slate-500 mt-1">Cartão Itaú · Prioridade IA</p>
+                </div>
+            </section>
+
+            <section class="grid grid-cols-1 lg:grid-cols-5 gap-6">
+                
+                <div class="lg:col-span-3 space-y-4">
+                    
+                    <div class="bg-brand-card border border-brand-gold/20 p-5 rounded-2xl flex gap-4 items-start shadow-xl">
+                        <div class="bg-brand-gold text-brand-sidebar p-2.5 rounded-xl">
+                            <i class="fa-solid fa-star text-sm"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-brand-gold">Recomendação da IA</h4>
+                            <p class="text-xs text-slate-300 mt-1 leading-relaxed">
+                                Priorize quitar o Cartão Itaú agora. Com os juros de 8,4% a.m., você economizaria <span class="text-brand-gold font-semibold">R$ 1.240</span> em 3 meses se adicionar R$ 300 extras por mês.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-brand-card/40 border border-slate-800 p-5 rounded-2xl space-y-4 shadow-xl">
+                        <div class="flex justify-between items-center">
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">Progresso de Quitação</h4>
+                            <span class="text-xs text-brand-gold font-bold">38% concluído</span>
+                        </div>
+                        <p class="text-xs text-slate-300 font-medium">Meta 2025</p>
+                        <div class="w-full bg-slate-900 h-2 rounded-full overflow-hidden">
+                            <div class="bg-brand-gold h-full rounded-full" style="width: 38%"></div>
+                        </div>
+                        <div class="flex justify-between items-end pt-2 h-20 gap-2">
+                            <div class="w-full bg-slate-800/40 h-8 rounded-md text-center text-[9px] pt-4">Jan</div>
+                            <div class="w-full bg-slate-800/40 h-12 rounded-md text-center text-[9px] pt-8">Fev</div>
+                            <div class="w-full bg-slate-800/40 h-6 rounded-md text-center text-[9px] pt-2">Mar</div>
+                            <div class="w-full bg-slate-800/40 h-16 rounded-md text-center text-[9px] pt-12">Abr</div>
+                            <div class="w-full bg-slate-800/40 h-10 rounded-md text-center text-[9px] pt-6">Mai</div>
+                            <div class="w-full bg-brand-gold/80 h-20 rounded-md text-center text-[9px] pt-16 text-brand-sidebar font-bold">Jun</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-brand-card to-slate-950 border border-slate-800 rounded-2xl p-5 shadow-xl space-y-3">
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">Simulação de Impacto</h4>
+                        <p class="text-xs text-slate-300">Aporte Adicional Mensal Definido: <span class="font-bold text-brand-gold">R$ 300,00</span></p>
+                        <div class="bg-brand-sidebar/60 p-4 rounded-xl border border-slate-800/80 text-center space-y-1">
+                            <p class="text-[10px] text-slate-500 uppercase tracking-wider font-semibold">Redução de Tempo</p>
+                            <p class="text-3xl font-extrabold text-emerald-400">- 6 Meses</p>
+                            <p class="text-[11px] text-slate-400">Economia real estimada em juros compostos no fluxo final</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2 space-y-3">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">Dívidas Prioritárias</h4>
+                    
+                    <div class="bg-brand-card/70 border-l-4 border-rose-500 border border-slate-800/60 p-4 rounded-xl flex justify-between items-center shadow-md">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-slate-800 p-2.5 rounded-lg text-slate-400"><i class="fa-solid fa-credit-card"></i></div>
+                            <div>
+                                <p class="text-xs font-bold text-white">Cartão Itaú</p>
+                                <p class="text-[10px] text-slate-400">Vence 05/Jul · 8,4% a.m.</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-xs font-bold text-white">R$ 4.200</p>
+                            <span class="text-[9px] font-bold text-rose-400 bg-rose-500/10 px-1.5 py-0.5 rounded">Prioritária</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-brand-card/70 border-l-4 border-amber-500 border border-slate-800/60 p-4 rounded-xl flex justify-between items-center shadow-md">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-slate-800 p-2.5 rounded-lg text-slate-400"><i class="fa-solid fa-building"></i></div>
+                            <div>
+                                <p class="text-xs font-bold text-white">Empréstimo Caixa</p>
+                                <p class="text-[10px] text-slate-400">Vence 10/Jul · 3,2% a.m.</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-xs font-bold text-white">R$ 12.500</p>
+                            <span class="text-[9px] font-bold text-amber-400 bg-amber-500/10 px-1.5 py-0.5 rounded">Atenção</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-brand-card/70 border-l-4 border-emerald-500 border border-slate-800/60 p-4 rounded-xl flex justify-between items-center shadow-md">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-slate-800 p-2.5 rounded-lg text-slate-400"><i class="fa-solid fa-house"></i></div>
+                            <div>
+                                <p class="text-xs font-bold text-white">Financiamento Ap.</p>
+                                <p class="text-[10px] text-slate-400">Vence 15/Jul · 0,8% a.m.</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-xs font-bold text-white">R$ 18.120</p>
+                            <span class="text-[9px] font-bold text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded">Normal</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
