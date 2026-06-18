@@ -27,5 +27,5 @@ Esta entrega corresponde à implementação da interface web responsiva do siste
 
 ## Autora
 
-Stella Stoffelshaus Augusto  
+Stella Augusto  
 FIAP - Análise e Desenvolvimento de Sistemas
